@@ -7,6 +7,7 @@ const ProductItem = (props) => {
   const { title, price, description, id } = props;
 
   const dispatch = useDispatch();
+
   const addCartHandler = () => {
     dispatch(
       cartActions.addItemToCart({
@@ -16,6 +17,7 @@ const ProductItem = (props) => {
       })
     );
   };
+
   return (
     <li className={classes.item}>
       <Card>
